@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DharmikPuja</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js"></script>
+    <script src="firebase-config.js" defer type="module"></script>
+    <script src="login.js" type="module"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="overlay"></div>
+        <div class="login-content">
+            <h2>Login to DharmikPuja</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div class="separator">or</div>
+            <a href="register.html" class="register-link">Create New Account</a> <!-- Link to the registration page -->
+            <!-- Google sign-in button -->
+            <button id="gsi-material-button" class="gsi-material-button">
+                <div class="gsi-material-button-state"></div>
+                <div class="gsi-material-button-content-wrapper">
+                    <div class="gsi-material-button-icon">
+                        <!-- Your SVG Icon Code -->
+                    </div>
+                    <span class="gsi-material-button-contents">Sign in with Google</span>
+                    <span style="display: none;">Sign in with Google</span>
+                </div>
+            </button>
+            <!-- End of Google sign-in button -->
+        </div>
+    </div>
+    
+</body>
+</html>

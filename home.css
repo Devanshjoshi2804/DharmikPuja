@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: rgb(246, 185, 43);
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-family: 'Great Vibes', cursive; /* Vintage-inspired font for logo */
+    font-size: 30px;
+    font-weight: 700;
+    color:#f8650a
+}
+.nav-links{
+    display: flex;
+    font-family: 'Great Vibes', cursive; /* Vintage-inspired font for logo */
+}
+.nav-links a{
+    font-family: 'Great Vibes', cursive; /* Vintage-inspired font for logo */
+    color: rgb(222, 66, 28) ;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid w heat transparent;
+    transition: all .55s ease;
+}
+.nav-links a:hover{
+    border-bottom: 2px solid wheat;
+}
+#menu-icon{
+    color: black;
+    font-size: 35px;
+    z-index:  10001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 0 2.5%;
+}
+.Puja{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #f87a2c,#c55007 #e7cd24 75.52%);
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    gap:2rem
+    
+}
+.Puja-text h4{
+    padding: 100 px 300 px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-bottom: 10px;
+    
+}
+.Puja-text h1{
+  padding: 0 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    line-height: 1;
+    color:aliceblue;
+    margin: 0 0 25px;
+}
+.Puja-text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100 px 300 px;
+    color: aliceblue;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 25px;
+    
+}
+.Puja-text  a{
+    display: inline-block;
+    color: aliceblue;
+    background:rgb(246, 185, 43);
+    border: 1px solid transparent;
+    padding: 12px 30 px;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.btn {
+    padding: 0 0 10%
+    margin: 1px;
+    padding: 10px 60px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn:hover::before {
+    opacity: 1;
+  }
+  
+  .btn:active:after {
+    background: transparent;
+  }
+  
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
+    
+.puja-img img {
+    width: 550px;
+    height: auto;
+    align-items: end;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+/* Your existing CSS code remains the same */
+
+/* Add styles for login button */
+.login-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fee6e3;
+  color: #111;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.login-btn:hover {
+  background-color: #ffdeda;
+}
